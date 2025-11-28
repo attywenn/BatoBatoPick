@@ -50,6 +50,7 @@ int main () {
                     }
                     if (found_un && found_pw) {
                         cout<<"You were successfully logged in!"<<endl; 
+                        cout<<"Welcome, "<<un<<"!"<<endl;
 
                         // game starts
                         do {
@@ -103,12 +104,13 @@ int main () {
                             round+=1;
                             if (round == 10) {
                                 cout<<"===//GAME OVER//==="<<endl;
-                                if (score>5) {
-                                    cout<<">>>>>> [Wency's MESSAGE] You won against Bot!"<<endl;
+                                if (score>6) {
+                                    cout<<">>>>>> [Wency's MESSAGE] Magaling ka, "<<un<<"! Tinalo mo si ADMIN WENXX!"<<endl;
                                 } else {
                                     cout<<">>>>>> [Wency's MESSAGE] aahahahahahah talo"<<endl;
                                 }
                                 round=1;
+                                cout<<endl;
                                 break;
                             }
 
